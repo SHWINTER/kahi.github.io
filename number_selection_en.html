@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans+SC:wght@100..900&family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="js/topnav.js"></script>
+<!-- I tried to use buttons but it was too difficult. Please don't mind the JavaScript below. -->
+<script src="js/p_number.js"></script>
+<meta charset="UTF-8">
+<title>Number Selection - Random Park</title>
+<link rel="stylesheet" href="css/layout_number_selection.css">
+</head>
+
+<body>
+<div class="topnav">
+	<div id="title">
+		<a href="index.html">Random Park</a>
+	</div>
+	<div id="mylinks">
+		<a href="#" class="jp">購入履歴・日付変更 &rarr;</a>
+		<a href="#" class="jp">団体・企業向け &rarr;</a>
+	</div>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+	</a>
+</div>
+<div id="container">
+	<div class="navbar">
+		<ul>
+			<li><a href="date_selection_en.html">Date Selection</a></li>
+			<li>&rarr;</li>
+			<li><a href="ticket_selection_en.html">Ticket Selection</a></li>
+			<li>&rarr;</li>
+			<li>Number Selection</li>
+			<li>&rarr;</li>
+			<li>Confirmation</li>
+			<li>&rarr;</li>
+			<li>Payment</li>
+		</ul>
+	</div>
+	<h1 class="en">Please choose the number of attendants. </h1>
+	<div class="column1">
+	<table class="people">
+		<tr><td>Adult (12~64 years old)</td><td><select name="adult" class="number"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option></select></td></tr>
+		<tr><td>Children (4~11 years old)</td><td><select name="adult" class="number"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option></select></td></tr>
+		<tr><td>Senior (over 65 years old)</td><td><select name="adult" class="number"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option></select></td></tr>
+	</table>
+	</div>
+	<div class="column2">
+	<p class="en">Physically Challenged Personals</p>
+	<table class="people">
+		<tr><td>SP Adult (12~64 years old)</td><td><select name="adult" class="number"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option></select></td></tr>
+		<tr><td>SP Children (4~11 years old)</td><td><select name="adult" class="number"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option></select></td></tr>
+		<tr><td>SP Senior (over 65 years old)</td><td><select name="adult" class="number"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option></select></td></tr>
+	</table>
+	</div>
+	<div id="exp">
+		<p class="en">*All guests in the group have to purchase the same kind of tickets.</p>
+		<p class="en">*Please use the group application if your group contains more than 20 people.</p>
+	</div>
+	<a id="next" class="en" href="confirmation_en.html">next</a>
+	<div class="column3">
+		<ul>
+			<li><p class="en">&copy;2025 Random Park Co., Ltd.</p></li>
+			<li><p class="en">*Images for illustration purposes only. </p></li>
+		</ul>
+	</div>
+	<div class="column4">
+		<ul class="foot">
+			<li><a class="en" href="#">Copyright and Logo &rarr;</a></li>
+			<li><a class="en" href="#">Terms of Use &rarr;</a></li>
+			<li><a class="en" href="#">Transportation Access &rarr;</a></li>
+			<li><a class="en" href="#">Facility Information and Safety Management &rarr;</a></li>
+			<li><a class="en" href="#">Privacy Policy &rarr;</a></li>
+			<li><a class="en" href="#">About Cookies &rarr;</a></li>
+			<li><a class="en" href="#">Legal Notices &rarr;</a></li>
+			<li><a class="en" href="#">WEB Ticket System Terms of Use &rarr;</a></li>
+			<li><a class="en" href="#">Sitemap &rarr;</a></li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

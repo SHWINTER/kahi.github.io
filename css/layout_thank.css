@@ -115,68 +115,27 @@ body {
 	padding: 10px 0 0 0;
 }
 
-.navbar {
-	font-family: "Noto Sans JP", sans-serif;
-}
-
-.navbar ul {
-	list-style: none;
-}
-
-.navbar ul li {
-	display: inline-block;
-	margin: 0 5px 0 0;
-	font-size: 12px;
-	color: #005E59;
-}
-
-.navbar ul li a {
-	text-decoration: underline;
-	color: #00BCB2;
-}
-
-.navbar ul li a:hover {
-	color: #003835;
-}
-
 h1 {
 	margin: 0 0 0 35px;
 	font-size: 30px;
 }
 
-.payment {
-	list-style: none;
-}
-
-.payment li {
-	margin: 20px 0 20px 0;
-	border: 2px solid #000;
-	max-width: 300px;
-	text-align: center;
-	border-radius: 10px;
-}
-
-.payment li a {
-	text-decoration: none;
-	color: #000;
-	font-size: 24px;
-	font-weight: 600;
-}
-
-.payment li a:hover {
-	text-decoration: underline;
-	color: #00827A;
-}
-
-.payment li a p {
-	margin: 0;
-	padding: 0;
+h2 {
+	margin: 0 35px 0 35px;
+	font-size: 16px;
+	font-weight: 300;
 }
 
 #exp {
-	margin: 0 0 0 30px;
-	font-size: 12px;
-	font-weight: 300;
+	margin: 10px 0 0 0;
+}
+
+h2 a {
+	color: #000;
+}
+
+h2 a:hover {
+	color: #00827A;
 }
 
 .column3 ul {
@@ -212,16 +171,6 @@ h1 {
 }
 
 @media only screen and (min-width: 1050px) {
-	.column1 {
-		width: 50%;
-		float: left;
-	}
-	
-	.column2 {
-		width: 50%;
-		float: right;
-	}
-	
 	.foot {
 		list-style-type: none;
 	}
