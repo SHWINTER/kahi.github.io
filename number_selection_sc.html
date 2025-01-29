@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans+SC:wght@100..900&family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="js/topnav.js"></script>
+<!-- ボタン式のものを試しましたが難しくてやめました。下記のJavaScriptに気にしないでください。-->
+<script src="js/p_number.js"></script>
+<meta charset="UTF-8">
+<title>Number Selection - Random Park</title>
+<link rel="stylesheet" href="css/layout_number_selection.css">
+</head>
+
+<body>
+<div class="topnav">
+	<div id="title">
+		<a href="index.html">Random Park</a>
+	</div>
+	<div id="mylinks">
+		<a href="#" class="jp">購入履歴・日付変更 &rarr;</a>
+		<a href="#" class="jp">団体・企業向け &rarr;</a>
+	</div>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+	</a>
+</div>
+<div id="container">
+	<div class="navbar">
+		<ul>
+			<li><a href="date_selection_sc.html">选择日期</a></li>
+			<li>&rarr;</li>
+			<li><a href="ticket_selection_sc.html">选择票种</a></li>
+			<li>&rarr;</li>
+			<li>选择人数</li>
+			<li>&rarr;</li>
+			<li>确认信息</li>
+			<li>&rarr;</li>
+			<li>支付</li>
+		</ul>
+	</div>
+	<h1 class="sc">请选择人数</h1>
+	<div class="column1">
+	<table class="people">
+		<tr><td class="sc">成人（12～64岁）</td><td><select name="adult" class="number"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option></select></td></tr>
+		<tr><td class="sc">儿童（4～11岁）</td><td><select name="adult" class="number"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option></select></td></tr>
+		<tr><td class="sc">长者（65岁及以上）</td><td><select name="adult" class="number"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option></select></td></tr>
+	</table>
+	</div>
+	<div class="column2">
+	<p class="sc">残障人士</p>
+	<table class="people">
+		<tr><td class="sc">SP成人（12～64岁）</td><td><select name="adult" class="number"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option></select></td></tr>
+		<tr><td class="sc">SP儿童（4～11岁）</td><td><select name="adult" class="number"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option></select></td></tr>
+		<tr><td class="sc">SP长者（65岁及以上）</td><td><select name="adult" class="number"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option></select></td></tr>
+	</table>
+	</div>
+	<div id="exp">
+		<p class="sc">*团队内所有人都只能购买同一票种</p>
+		<p class="sc">*21人及以上的团队请另外申请</p>
+	</div>
+	<a id="next" class="sc" href="confirmation_sc.html">继续</a>
+	<div class="column3">
+		<ul>
+			<li><p class="en">&copy;2025 Random Park Co., Ltd.</p></li>
+			<li><p class="sc">*照片仅供参考。</p></li>
+		</ul>
+	</div>
+	<div class="column4">
+		<ul class="foot">
+			<li><a class="sc" href="#">版权和商标 &rarr;</a></li>
+			<li><a class="sc" href="#">使用条款 &rarr;</a></li>
+			<li><a class="sc" href="#">交通方式 &rarr;</a></li>
+			<li><a class="sc" href="#">设施信息和安全管理 &rarr;</a></li>
+			<li><a class="sc" href="#">隐私政策 &rarr;</a></li>
+			<li><a class="sc" href="#">Cookie 声明 &rarr;</a></li>
+			<li><a class="sc" href="#">法律描述 &rarr;</a></li>
+			<li><a class="sc" href="#">网络票务系统使用条款 &rarr;</a></li>
+			<li><a class="sc" href="#">网站地图 &rarr;</a></li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>
